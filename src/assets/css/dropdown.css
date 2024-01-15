@@ -1,0 +1,34 @@
+.dropdown-card {
+    display: flex;
+    flex-direction: row;
+    padding: 8px 20px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-card .text {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.dropdown-content {
+    position: absolute;
+    background: #fff;
+    top: 50px;
+    min-width: 80px;
+}
+
+.dropdown-card img {
+    width: 12px;
+    height: 12px;
+}
+.dropdown-item:hover{
+    color: #000;
+    transition: 0.2s ease;
+}
+
+.dropdown-item{
+    font-size: 12px;
+    font-weight: 400;
+}

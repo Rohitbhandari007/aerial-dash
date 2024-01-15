@@ -1,0 +1,358 @@
+.dashboard-container {
+    width: 100%;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    padding: 24px;
+    gap: 24px;
+}
+
+.left-content {
+    width: 78%;
+    display: flex;
+    flex-direction: column;
+    gap:32px;
+}
+
+.left-content h1 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.left-content .analytics,
+.history {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.right-content {
+    width: 22%;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.card {
+    display: flex;
+    flex-grow: 1;
+    border: 1px solid gray;
+    border-radius: 16px;
+    gap: 18px;
+    padding: 24px;
+    flex-direction: column;
+    border: 1px solid rgba(109, 125, 147, 0.12);
+    transition: 0.2s ease;
+    cursor: pointer;
+    color: #6D7D93;
+    align-items: start;
+    background-color: #fff;
+
+
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.amount {
+    font-size: 28px;
+    font-weight: 700;
+
+}
+
+.details {
+    font-size: 12px;
+    font-weight: 700;
+
+}
+
+.details-and-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.highilight {
+    background: #304DAF;
+    color: #fff;
+}
+
+.card:hover {
+    box-shadow: 4px 4px 24px -10px rgba(0, 0, 0, 0.24);
+    border: none;
+}
+
+
+
+.account-card:hover,
+.target-card:hover,
+.analytics-card:hover,
+.summary-card:hover,
+.dropdown-card:hover,
+.dropdown-content:hover {
+    box-shadow: none;
+    border: 1px solid rgba(109, 125, 147, 0.12);
+
+}
+
+.account-card{
+    align-items: center;
+    justify-content: center;
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+
+.account-card-icon {
+    border-radius: 12px;
+    display: flex;
+    background: linear-gradient(255deg, #304DAF -6%, #303DAF 106.84%);
+    color: #fff;
+    padding: 20px;
+    width: auto;
+    flex-direction: column;
+    /* width: 250px; */
+    width: 100%;
+    gap: 38px;
+    width: -webkit-fill-available;
+
+
+}
+
+.account-card .name-and-logo,
+.transaction-and-balance {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.account-card .card-name {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.account-card .item {
+    display: flex;
+    flex-direction: column;
+}
+
+.account-card .item .item-label {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.account-card .item .item-value {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.account-card .card-logo {
+    padding: 6px 15px;
+    width: 66px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 2px;
+
+}
+
+.account-card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.account-card .title {
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    align-self: start;
+
+}
+
+.account-card .add-new-btn {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #6D7D93;
+    /* width: 230px; */
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    gap: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    width: -webkit-fill-available;
+
+}
+
+.add-new-btn img {
+    height: 14px;
+    width: 14px;
+}
+.target-card{
+    align-items: center;
+    justify-content: center;
+}
+.target {
+    /* width: 250px; */
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start  ;
+    position: relative;
+    width: -webkit-fill-available;
+}
+.left-area-target{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+.title-and-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.target .title {
+    font-weight: 700;
+    font-size: 12px;
+    color: #000;
+    white-space: nowrap;
+
+}
+
+.target .detail {
+    font-weight: 700;
+    font-size: 10px;
+    color: #6D7D93;
+    white-space: nowrap;
+
+}
+
+.icon-and-percent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.target .percent {
+    color: #000;
+    font-size: 10px;
+    font-weight: 700;
+
+}
+
+.target .percent-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 12px;
+}
+.target #right-arrow{
+    align-self: flex-end;
+    position: absolute;
+    right: 10px;
+}
+.target-card h3{
+    align-self: start;
+}
+.chart-container{
+    width: 100%;
+    height: max-content;
+}
+.highcharts-legend .highcharts-no-tooltip{
+    display: none;
+}
+.analytics-card{
+    position: relative;
+}
+.analytics-card .dropdowns{
+    display: flex;
+    align-self: flex-end;
+    gap: 24px;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    z-index: 1;
+}
+
+.summary-card .card-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid rgba(109, 125, 147, 0.12);
+    align-items: center;
+}
+
+.summary-card .card-header .tabs{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.summary-card .card-header .tabs .active-tab{
+    padding-bottom: 20px;
+
+    color: #303DAF;
+    border-bottom: 2px solid #304DAF;
+
+}
+.summary-card .card-header .view-more{
+    display: flex;
+    flex-direction: row;
+    white-space: no-wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 20px;
+
+}
+
+.summary-card .card-header .view-more img{
+    height: 14px;
+    width: auto;
+}
+
+@media screen and (max-width: 1039px) {
+    .content {
+        flex-direction: column-reverse;
+        
+        padding: 10px;
+        margin-left: 40px !important;
+    }
+    .left-content, .right-content{
+        width: 100%;
+        padding: 0;
+    }
+
+    .cards{
+        overflow: auto;
+        flex-direction: column;
+    }
+    
+    
+
+}
