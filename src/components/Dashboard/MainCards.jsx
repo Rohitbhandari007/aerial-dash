@@ -4,7 +4,7 @@ import arrowIcon from '../../assets/img/arrow.svg'
 
 const MainCard = ({ title, amount, details, highilight=false }) => {
     return (
-        <div className={`card ${highilight?'highilight':''}`}>
+        <div className={`card${highilight?' highilight':''}`}>
             <div className="title">{title}</div>
             <div className="amount">{amount}</div>
             <div className="details-and-icon">

@@ -8,6 +8,7 @@ export const useStore = create((set) => ({
             title: "Total Earning",
             amount: "$ 16,500",
             details: "2% Decrease From Target",
+            highilight:true
         },
         {
             amount: "$ 16,500",

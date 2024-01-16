@@ -39,7 +39,7 @@ const Dashboard = () => {
                                 amount={card.amount}
                                 title={card.title}
                                 details={card.details}
-                                highlight={card.highlight || false}
+                                highilight={card.highilight}
                             />
                         ))}
                     </div>
